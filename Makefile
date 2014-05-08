@@ -2,6 +2,9 @@
 build: components drop-down.css
 	@component build --dev
 
+test:
+	open ./test/index.html
+
 components: component.json
 	@component install --dev
 
