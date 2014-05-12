@@ -1,0 +1,30 @@
+{
+  "name": "shoelace-ui-drop-down",
+  "version": "0.0.1",
+  "description": "Default drop down styles and variables",
+  "main": "index.styl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shoelace-ui/drop-down.git"
+  },
+  "keywords": [
+    "drop-down",
+    "stylus"
+  ],
+  "author": "Brannon Lucas <brannonlucas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shoelace-ui/drop-down/issues"
+  },
+  "homepage": "https://github.com/shoelace-ui/drop-down",
+  "dependencies": {
+    "shoelace-ui-font-size": "git+https://github.com/shoelace-ui/font-size.git",
+    "shoelace-ui-line-height": "git+https://github.com/shoelace-ui/line-height.git",
+    "shoelace-ui-padding": "git+https://github.com/shoelace-ui/padding.git",
+    "shoelace-ui-gray": "git+https://github.com/shoelace-ui/gray.git"
+
+  }
+}
