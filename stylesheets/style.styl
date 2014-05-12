@@ -1,0 +1,62 @@
+@require('./variables')
+// Basic styling
+
+.dropdown
+  display inline-block
+
+  li a:hover
+    background-color $hover-bg
+
+  ul
+    position relative
+    display block
+    list-style none
+    margin 0
+    padding 0
+
+    li
+      float left
+      display list-item
+      list-style none
+
+      a
+        background-color $item-bg
+        display block
+        padding .938em .625em
+
+/*
+* Dropdown styling
+*/
+
+.dropdown ul
+
+  // Hide dropdowns by default
+  ul
+    display none
+    position absolute
+    top 3em
+
+  // Display carrot only on elements with children
+  li > a
+    &:after
+      content " >"
+
+    &:only-child:after
+      content ""
+
+  // Display Dropdowns on hover
+  li:hover > ul
+    display list-item
+
+  //  First tier dropdown
+  ul li
+    min-width 10.5em
+    float none
+    position relative
+    border-bottom none
+
+  // More tiers
+  ul ul li
+    position absolute relative
+    top -3em
+    left 10.5em

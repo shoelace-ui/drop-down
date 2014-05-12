@@ -1,14 +1,12 @@
 
-build: components drop-down.css
-	@component build --dev
+PORT  ?= 3000
+SERVE ?= ./node_modules/.bin/serve
 
-test:
-	open ./test/index.html
+example: $(SERVE)
+	open http://localhost:$(PORT)/$(@D)/example/index.jade
+	$^ . --port $(PORT)
 
-components: component.json
-	@component install --dev
+$(SERVE):
+	npm install $(notdir $@)
 
-clean:
-	rm -fr build components template.js
-
-.PHONY: clean
+.PHONY: $(SERVE)

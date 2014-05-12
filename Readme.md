@@ -3,21 +3,19 @@
 
   Default dropdown style
 
-## Installation
+### Use
 
-  Install with [component(1)](http://component.io):
+  Class your div, nav, shwhatever you would like to use as
+  a dropdown as class='dropdown'
 
-    $ component install shoelace-ui/drop-down
-
-## API
-
-
+  First ```<ul>``` contains highest level menu choices as ```<li>```. Any nested choices
+  follow same ```<ul><li>``` structure.
 
 ## License
 
   The MIT License (MIT)
 
-  Copyright (c) 2014 <copyright holders>
+  Copyright (c) 2014 Brannon Lucas <brannonlucas@gmail.com>
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
